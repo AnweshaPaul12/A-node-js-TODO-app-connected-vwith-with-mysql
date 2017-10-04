@@ -1,0 +1,24 @@
+html
+ head
+  title Account List
+ body
+  h3 Account List
+  a(href="account/add") Add
+  br
+  table(border="1")
+   tr
+    th Id
+    th Name
+    th Description
+    th Action
+    
+   each account in accounts
+    tr
+     td #{account.id}
+     td #{account.name}
+     td #{account.description}
+     td
+      a(href="/account/edit/"+ account.id) Edit
+
+      a(href="/account/delete/" + account.id, onclick="return confirm('Are you sure?')") Delete
+   

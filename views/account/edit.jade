@@ -1,0 +1,20 @@
+html
+ head
+  title Account List
+ body
+  h3 Account Info
+  form(method="post", action="/account/edit")
+    table
+     tr
+      th Name
+      td
+       input(type="text", name="name", value=accounts.name)
+       input(type="hidden", name="id", value=accounts.id)
+     tr
+      th Description
+      td
+       input(type="text", name="description", value=accounts.description)
+     tr
+      th &nbsp;
+      td
+       input(type="submit",value="Save")

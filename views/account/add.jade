@@ -1,0 +1,19 @@
+html
+ head
+  title Account List
+ body
+  h3 Account Info
+  form(method="post", action="account/add")
+    table
+     tr
+      th Name
+      td
+       input(type="text",name="name")
+     tr
+      th Description
+      td
+       input(type="text",name="description")
+     tr
+      th &nbsp;
+      td
+       input(type="submit",value="Save")
